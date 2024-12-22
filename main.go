@@ -16,6 +16,8 @@ import (
 )
 
 func main() {
+	log.Println("Starting application...")
+	
 	log.SetOutput(os.Stderr)
 	if os.Getenv("DEBUG") == "true" {
 		slog.SetLogLoggerLevel(slog.LevelDebug)
